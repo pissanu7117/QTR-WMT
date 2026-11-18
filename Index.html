@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#092d66" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<title>QTR Transport Report V1.2</title>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+
+<style>
+:root{--navy:#102d5d;--blue:#0865d7;--line:#b7cae8;--muted:#617590;--bg:#ecf3fc;--green:#09843e}*{box-sizing:border-box}body{margin:0;color:#142d54;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Thonburi","Noto Sans Thai",Arial,sans-serif;font-size:15px}button,input,textarea{font:inherit}button{cursor:pointer}button:active{transform:scale(.985)}.app{max-width:490px;margin:auto;min-height:100vh;padding-bottom:calc(26px + env(safe-area-inset-bottom))}.hero{position:relative;min-height:166px;padding:28px 17px 12px;background:radial-gradient(circle at 83% 48%,#1164c1 0%,#0b3d83 32%,#071d4c 78%);color:white;overflow:hidden}.hero:after{content:"";position:absolute;bottom:16px;left:-20%;width:140%;height:2px;transform:rotate(-7deg);background:#1fb6fc;box-shadow:0 0 11px #49bafa}.brand{position:relative;z-index:2;display:flex;align-items:center;gap:12px}.mark{font-size:39px;font-weight:1000;line-height:.85;font-style:italic;letter-spacing:-3px;color:white;text-shadow:2px 2px #234e87}.mark span{color:#ff293c}.submark{font-size:10px;white-space:nowrap;font-weight:650;margin-top:6px}.brand-title{font-weight:850;font-size:19px;line-height:1.4;max-width:215px}.brand-title small{display:block;font-size:14px;font-weight:500}.truck{position:absolute;z-index:1;width:177px;right:-12px;bottom:-4px;filter:drop-shadow(0 8px 8px rgba(0,5,35,.5));pointer-events:none}.content{padding:11px}.notice{background:linear-gradient(#fff4ad,#ffdf67);border:1px solid #f8ca39;border-radius:16px;padding:13px 14px;text-align:center;font-weight:800;color:#58430b;margin:0 0 12px;box-shadow:0 3px 10px #203f6a1c;font-size:13px}.card{background:#fff;border-radius:17px;margin:0 0 12px;box-shadow:0 2px 9px #204a8518;overflow:hidden;border:1px solid #e3ebf7}.cardhead{padding:10px 13px;color:white;display:flex;gap:8px;align-items:center;justify-content:space-between;background:linear-gradient(105deg,#043575,#0973e8 69%,#0784fc);font-size:17px;font-weight:800}.cardhead.light{background:linear-gradient(95deg,#07437e,#489ae5 60%,#e2f2ff);color:#fff}.cardbody{padding:12px 13px 14px}.mini-btn{border:0;border-radius:12px;background:#eaf2ff;color:#124b9e;font-weight:800;padding:9px 10px;font-size:13px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:750;margin:0 0 4px}.field input,.field textarea{display:block;width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px 11px;color:#182f57;background:#f7faff;outline:0;font-size:15px;min-width:0}.field input:focus,.field textarea:focus{border-color:#2670e9;box-shadow:0 0 0 2px #2670e920}.field input[readonly]{background:#edf3fb;color:#264266}.field + .field{margin-top:11px}.grid2 .field + .field{margin-top:0}.span2{grid-column:1/-1}.date-wrap{display:flex;align-items:center;gap:12px}.date-wrap label{font-weight:800;white-space:nowrap}.date-wrap input{flex:1;min-width:0;padding:10px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:#183f76;text-align:center}.time-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}.time-field{display:flex;align-items:center;justify-content:space-between;gap:5px;border-bottom:1px solid #eff2f6;padding-bottom:7px}.time-field label{font-size:12px;font-weight:750;line-height:1.25}.time-field input{width:76px;min-width:0;padding:9px 4px;border:1.5px solid var(--line);border-radius:9px;text-align:center;letter-spacing:1px;font-size:16px;color:#132d5e}.helper{font-size:11px;color:#697d9a;font-weight:500}.badge{background:#064bc9;color:white;padding:5px 9px;border-radius:20px;font-size:12px}.pick{display:block;width:100%;padding:19px 12px;background:#f5faff;border:2px dashed #71a6ec;border-radius:12px;text-align:center;cursor:pointer;color:#0a4eaf;font-weight:800}.pick small{font-weight:500;color:#67809c}.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:10px}.pic{position:relative;aspect-ratio:1}.pic img{width:100%;height:100%;object-fit:cover;border-radius:8px}.pic button{position:absolute;right:-4px;top:-4px;border:0;background:#b11c32;color:#fff;width:23px;height:23px;border-radius:50%;font-weight:800}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.action{border:0;border-radius:13px;color:#fff;padding:13px 5px;font-size:14px;font-weight:850;min-height:54px;box-shadow:0 4px 8px #153c762a}.a-blue{background:linear-gradient(140deg,#144bdc,#05309b)}.a-green{background:linear-gradient(140deg,#109452,#01662d)}.a-white{background:white;color:#06542c;border:2px solid #06aa46}.a-white2{background:white;color:#1451a5;border:2px solid #67a3e3}.small-actions{display:flex;gap:8px;justify-content:flex-end}.quiet{background:#edf3fd;border:1px solid #d0dff5;border-radius:10px;color:#1b4d8a;padding:9px;font-weight:750}.preview{white-space:pre-wrap;word-break:break-word;color:#23432d;background:#eef8ee;border:1px solid #c4dfc5;border-radius:12px;padding:15px;line-height:1.75;font-size:13px}.hidden{display:none!important}textarea{resize:vertical;min-height:72px}#message{border-top:4px solid #d8ebfb}.trip{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid #eef2f9}.trip:last-child{border-bottom:0}.trip span{color:#627a96;font-size:12px}.tip{font-size:11px;line-height:1.6;color:#647995;padding:2px 4px 10px}.dialog{position:fixed;inset:0;background:#031a3b90;display:flex;align-items:center;justify-content:center;z-index:50;padding:17px}.dialog>div{width:min(100%,420px);max-height:86vh;overflow:auto;border-radius:17px;background:white;padding:17px}.dialog h3{margin:0 0 12px}.dialog .field{margin-bottom:9px}.dialog .field input{background:#fff}.toast{position:fixed;z-index:99;bottom:30px;left:50%;transform:translateX(-50%);background:#153a67;color:#fff;padding:10px 18px;border-radius:20px;box-shadow:0 3px 15px #0005;font-size:13px;max-width:90%;text-align:center}.bottomline{text-align:center;font-size:11px;color:#7d8fa8;padding:8px}@media(max-width:370px){.mark{font-size:32px}.brand-title{font-size:16px}.truck{width:145px}.hero{min-height:150px}.cardbody{padding:11px}.time-grid{gap:6px}.time-field input{width:66px}.time-field label{font-size:11px}.action{font-size:12px}}
+
+/* V1.1 — mobile header refinement: no overlap, balanced truck placement */
+.hero{height:188px;min-height:188px;padding:20px 18px 14px;background:radial-gradient(ellipse at 92% 75%,#0b65bc 0%,#0d448d 33%,#081d49 82%)}
+.hero:after{bottom:18px;left:-12%;height:2px;transform:rotate(-8deg);opacity:.8}
+.brand{display:flex;flex-direction:column;align-items:flex-start;gap:17px;width:62%;max-width:240px;position:relative;z-index:3}
+.mark{font-size:48px;letter-spacing:-3px;line-height:.85}
+.submark{font-size:10px;margin-top:7px;white-space:nowrap}
+.brand-title{font-size:17px;line-height:1.3;max-width:none;width:100%;white-space:normal;text-shadow:0 1px 2px #07193a}
+.brand-title small{font-size:12px;margin-top:2px;white-space:normal;color:#dfeeff}
+.truck{width:53%;max-width:226px;right:-5px;bottom:1px;z-index:2;object-fit:contain;filter:drop-shadow(0 8px 7px #001a3999)}
+@media(max-width:390px){.hero{height:178px;min-height:178px;padding:19px 15px}.brand{width:59%;gap:16px}.mark{font-size:43px}.brand-title{font-size:15px}.brand-title small{font-size:11px}.truck{width:53%;right:-4px}}
+@media(max-width:350px){.hero{height:172px;min-height:172px}.brand{width:58%}.mark{font-size:39px}.brand-title{font-size:14px}.brand-title small{font-size:10px}.truck{width:55%}}
+
+/* TLR V1.2 — reference-inspired mobile interface; 100% contained on phone */
+.app{width:100%;max-width:490px;overflow-x:clip}
+.hero{height:165px;min-height:165px;padding:23px 13px 8px;background:radial-gradient(ellipse at 88% 45%,#086cc8 -5%,#0b3b80 40%,#061b48 85%);overflow:hidden}
+.hero:before{content:"";position:absolute;pointer-events:none;inset:0;background:repeating-linear-gradient(167deg,transparent 0px,transparent 36px,#1688d010 38px,#1688d010 40px);opacity:.75}
+.hero:after{bottom:14px;left:-8%;width:130%;height:2px;transform:rotate(-8deg);box-shadow:0 0 9px 2px #27bafe}
+.brand{display:grid;grid-template-columns:36% 64%;width:72%;max-width:none;gap:3px;align-items:center;position:relative;z-index:3}
+.brand-logo{min-width:0;position:relative;z-index:4}
+.mark{font-size:clamp(31px,9vw,52px);line-height:1;font-style:italic;white-space:nowrap;letter-spacing:-3px;text-shadow:0 2px 2px #082a56}
+.submark{font-size:clamp(8px,2.1vw,11px);font-weight:600;white-space:nowrap;margin-top:0;color:#f9fbff}
+.brand-title{min-width:0;width:auto;max-width:none;font-size:clamp(14px,4vw,21px);line-height:1.28;white-space:normal;font-weight:850;margin-left:4px;text-shadow:0 1px 3px #002a57}
+.brand-title small{display:block;font-size:clamp(12px,3.5vw,18px);font-weight:500;margin-top:3px;color:#fff;white-space:nowrap}
+.truck{position:absolute;z-index:2;width:41%;max-width:200px;height:auto;right:-5px;bottom:4px;object-fit:contain;filter:drop-shadow(0px 5px 5px #00153799)}
+.content{padding:9px 9px 16px}
+.notice{font-size:clamp(12px,3.25vw,15px);padding:13px 10px;border-radius:16px;margin-bottom:10px;background:linear-gradient(#fff4a3,#ffe264);box-shadow:0 4px 9px #23466c20}
+.card{border-radius:17px;margin-bottom:11px;box-shadow:0 3px 8px #173f7c18}
+.cardhead{font-size:clamp(15px,4vw,19px);padding:10px 13px;background:linear-gradient(105deg,#064383,#0474de 75%,#0a8af8)}
+.cardbody{padding:11px 12px 13px}
+.grid2{gap:8px 10px}
+.field label{font-size:clamp(12px,3.15vw,14px);margin-bottom:3px}
+.field input,.field textarea{font-size:clamp(13px,3.6vw,16px);padding:10px 9px;border-radius:10px;background:linear-gradient(#f8fbff,#eaf2fd)}
+.date-wrap input{font-size:15px}
+.time-grid{gap:8px 11px}
+.time-field label{font-size:clamp(11px,3.1vw,14px);flex:1;overflow-wrap:anywhere}
+.time-field input{width:clamp(68px,20vw,94px);flex-shrink:0;font-size:clamp(15px,4vw,18px);padding:9px 3px}
+.action{padding:12px 4px;font-size:clamp(12px,3.5vw,15px);border-radius:13px;line-height:1.22}
+.pick{padding:16px 6px}
+@media(max-width:430px){.hero{height:151px;min-height:151px;padding:25px 11px 8px}.brand{width:74%;grid-template-columns:38% 62%}.truck{width:39%;right:-6px;bottom:5px}.brand-title{font-size:clamp(13px,3.7vw,18px)}.submark{font-size:clamp(7px,1.95vw,9px)}.mark{font-size:clamp(29px,8.5vw,42px)}}
+@media(max-width:360px){.brand{width:76%}.brand-title{font-size:12px}.brand-title small{font-size:11px}.truck{width:37%}.actions{gap:6px}.cardbody{padding:10px}.time-grid{gap:5px}}
+
+/* V1.3 — remove top-right truck and rebalance header */
+.truck{display:none!important}
+.hero{height:138px!important;min-height:138px!important;padding:20px 14px 10px!important;background:radial-gradient(ellipse at 92% 45%,#086cc8 -5%,#0b3b80 40%,#061b48 85%)!important}
+.brand{width:100%!important;max-width:none!important;display:grid!important;grid-template-columns:auto 1fr!important;align-items:center!important;gap:14px!important}
+.brand-title{font-size:clamp(16px,4.6vw,24px)!important;line-height:1.22!important;margin-left:0!important;max-width:none!important;width:auto!important}
+.brand-title small{font-size:clamp(12px,3.6vw,18px)!important;white-space:normal!important}
+.brand-logo{display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.mark{font-size:clamp(34px,10vw,52px)!important;line-height:.84!important}
+.submark{font-size:clamp(8px,2.2vw,11px)!important;margin-top:6px!important}
+@media(max-width:430px){.hero{height:132px!important;min-height:132px!important;padding:18px 12px 10px!important}.brand{gap:12px!important;grid-template-columns:96px 1fr!important}.brand-title{font-size:clamp(15px,4.8vw,20px)!important}.brand-title small{font-size:clamp(11px,3.5vw,15px)!important}}
+@media(max-width:360px){.hero{height:126px!important;min-height:126px!important}.brand{grid-template-columns:88px 1fr!important;gap:10px!important}.mark{font-size:34px!important}.submark{font-size:8px!important}.brand-title{font-size:14px!important}.brand-title small{font-size:11px!important}}
+
+
+/* QTR V1.0 — show the approved icon in the header; truck hero stays removed */
+.hero{height:132px!important;min-height:132px!important;padding:16px 14px 12px!important}
+.brand{display:flex!important;align-items:center!important;gap:14px!important;width:100%!important;max-width:none!important}
+.brand-app-icon{display:block;width:92px;height:92px;flex:0 0 92px;object-fit:contain;border-radius:18px;box-shadow:0 4px 14px rgba(0,0,0,.26)}
+.brand-title{flex:1;min-width:0;font-size:clamp(16px,4.6vw,21px)!important;line-height:1.22!important;margin-left:0!important}
+.brand-title small{font-size:clamp(10px,3vw,13px)!important;line-height:1.4!important;white-space:normal!important;max-width:100%}
+@media(max-width:360px){.brand-app-icon{width:78px;height:78px;flex-basis:78px}.hero{height:120px!important;min-height:120px!important}.brand-title{font-size:15px!important}.brand-title small{font-size:10px!important}}
+
+/* Header: QLR logo on left, Thai shipping report title in center, red WMT at right */
+.hero{height:124px!important;min-height:124px!important;padding:19px 12px 12px!important}
+.brand{display:grid!important;grid-template-columns:minmax(76px,1fr) minmax(132px,1.85fr) minmax(60px,.9fr)!important;width:100%!important;max-width:none!important;gap:7px!important;align-items:center!important}
+.qtr-wordmark{font-size:clamp(27px,8.5vw,42px);font-weight:1000;line-height:1;letter-spacing:-2px;font-style:italic;color:#fff;text-shadow:0 2px 3px #01132d,2px 2px #4b82c4;white-space:nowrap}
+.qtr-wordmark .qtr-q{color:#ffdb37}
+.brand-title{min-width:0!important;text-align:center;font-size:clamp(13px,3.55vw,18px)!important;line-height:1.17!important;font-weight:850!important;overflow-wrap:normal}
+.brand-title small{display:block;font-size:clamp(10px,2.6vw,13px)!important;font-weight:600;margin-top:5px;line-height:1.25!important;color:#d9edff}
+.wmt-wordmark{font-size:clamp(22px,6vw,34px);font-style:italic;font-weight:1000;letter-spacing:-1.4px;color:#fa3548;text-shadow:1px 1px 0 #fff,2px 3px 4px #03183b;justify-self:end;white-space:nowrap}
+@media(max-width:360px){.brand{grid-template-columns:69px minmax(116px,1fr) 56px!important;gap:4px!important}.brand-title{font-size:11px!important}.brand-title small{font-size:9px!important}.qtr-wordmark{font-size:26px}.wmt-wordmark{font-size:21px}}
+
+/* Refined, compact transport wordmarks — no external fonts or images */
+.hero{background:linear-gradient(113deg,#071b42 0%,#0a3977 52%,#0861ae 100%)!important;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.075) 47%,transparent 52%);pointer-events:none}
+.brand{position:relative;z-index:1;grid-template-columns:minmax(81px,1fr) minmax(112px,1.64fr) minmax(66px,.86fr)!important;gap:6px!important}
+.qtr-wordmark{display:inline-flex;align-items:baseline;font-family:Impact,'Arial Black',system-ui,sans-serif;font-size:clamp(30px,8.7vw,43px)!important;font-weight:950;letter-spacing:-2.8px!important;font-style:italic;line-height:1.05;color:#eef6ff;background:linear-gradient(180deg,#fff 12%,#bed8f4 52%,#7fa9d7 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(1px 2px 1px #00112d) drop-shadow(0 0 2px #70baff);transform:skewX(-5deg);white-space:nowrap}
+.qtr-wordmark .qtr-q{background:linear-gradient(180deg,#fff57d 0%,#ffcc16 47%,#ed9200 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-right:1px}
+.brand-title{font-size:clamp(12px,3.35vw,17px)!important;line-height:1.35!important;letter-spacing:-.15px;color:#fff;text-shadow:0 1px 3px #00183d}
+.wmt-wordmark{font-family:Impact,'Arial Black',system-ui,sans-serif;font-size:clamp(24px,7.1vw,38px)!important;font-weight:950;letter-spacing:-1.6px!important;font-style:italic;line-height:1.04;background:linear-gradient(180deg,#ffb0a4 0%,#ff3448 45%,#bb0a25 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(1px 2px 1px #160c2d) drop-shadow(0 0 1px #fff);transform:skewX(-4deg);white-space:nowrap}
+@media(max-width:360px){.brand{grid-template-columns:70px minmax(106px,1fr) 57px!important;gap:4px!important}.qtr-wordmark{font-size:28px!important}.wmt-wordmark{font-size:23px!important}.brand-title{font-size:11px!important}}
+
+/* V1 graphic wordmarks — keep the form and actions unchanged */
+.hero{height:112px!important;min-height:112px!important;padding:16px 9px!important}
+.brand{display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(0,1.42fr) minmax(0,1.12fr)!important;align-items:center!important;gap:5px!important;width:100%!important}
+.graphic-logo{display:block;width:100%;height:auto;max-height:82px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.25))}
+.graphic-qlr{justify-self:start}.graphic-wmt{justify-self:end}
+.brand-title{min-width:0!important;font-weight:900!important;font-size:clamp(11px,3.15vw,17px)!important;line-height:1.4!important;text-align:center!important;text-wrap:balance;color:#fff}
+@media(max-width:370px){.hero{height:104px!important;min-height:104px!important}.brand{grid-template-columns:minmax(0,1fr) minmax(0,1.45fr) minmax(0,1fr)!important;gap:3px!important}.brand-title{font-size:11px!important}.graphic-logo{max-height:68px}}
+ .save-pending{background:linear-gradient(140deg,#f7cb36,#d99a08);color:#503500}
+.save-done{background:linear-gradient(140deg,#109452,#01662d);color:white}
+.date-wrap #pallets{max-width:54%;font-size:16px}
+</style>
+</head>
+<body>
+<main class="app">
+<header class="hero">
+<div class="brand"><img class="graphic-logo graphic-qlr" src="qlr-logo.png" alt="QLR"/><div class="brand-title">รายงานการขนส่งสินค้า</div><img class="graphic-logo graphic-wmt" src="wmt-logo.png" alt="WMT"/></div>
+</header>
+<div class="content">
+<div class="notice">ⓘ บันทึกข้อมูลการรับ–ส่งสินค้า พร้อมรูปภาพ และแยกแชร์ข้อความ/รูปภาพเข้า LINE</div>
+<section class="card"><div class="cardhead">🚚 ข้อมูลประจำงาน <button class="mini-btn" id="editInfo">✎ แก้ไขข้อมูล</button></div><div class="cardbody"><div class="grid2">
+<div class="field"><label>ต้นทาง</label><input id="origin" readonly="" value="เสริมสุข ชลบุรี"/></div><div class="field"><label>ปลายทาง</label><input id="destination" readonly="" value="ซีพี ออลล์ ชลบุรี"/></div><div class="field"><label>ทะเบียนหัวรถ</label><input id="truckPlate" readonly="" value="71-7117 ฉช."/></div><div class="field"><label>ทะเบียนลูกพ่วง</label><input id="trailerPlate" readonly="" value="71-7118 ฉช."/></div><div class="field span2"><label>คนขับชื่อ</label><input id="driver" readonly="" value="นายพิษณุ ผ่องภิญโญ"/></div></div></div></section>
+<section class="card"><div class="cardbody"><div class="date-wrap"><label for="jobDate">📅 วันที่รับสินค้า</label><input id="jobDate" type="date"/></div></div></section>
+<section class="card"><div class="cardhead light">◷ รายละเอียดเวลา <span class="helper" style="color:#113c76">ใส่ 4 หลัก เช่น 1430</span></div><div class="cardbody time-grid">
+<div class="time-field"><label for="timeOrigin">🚚 ถึงต้นทาง</label><input id="timeOrigin" inputmode="numeric" maxlength="4" placeholder="HHMM"/></div><div class="time-field"><label for="timeLoaded">📦 ขึ้นสินค้าเสร็จ</label><input id="timeLoaded" inputmode="numeric" maxlength="4" placeholder="HHMM"/></div><div class="time-field"><label for="timeDestination">🏁 ถึงปลายทาง</label><input id="timeDestination" inputmode="numeric" maxlength="4" placeholder="HHMM"/></div><div class="time-field"><label for="timeBill">📄 ยื่นบิล</label><input id="timeBill" inputmode="numeric" maxlength="4" placeholder="HHMM"/></div><div class="time-field"><label for="timeUnloaded">✅ ลงสินค้าเสร็จ</label><input id="timeUnloaded" inputmode="numeric" maxlength="4" placeholder="HHMM"/></div></div></section>
+
+<section class="card"><div class="cardbody"><div class="date-wrap"><label for="pallets">▦ จำนวนพาเลท (ตัว)</label><input id="pallets" inputmode="numeric" min="0" placeholder="เช่น 24" step="1" type="number"/></div></div></section>
+<section class="card"><div class="cardhead light" style="font-size:14px">▧ รูปภาพรายงาน <span class="badge" id="photoCount">0/12</span></div><div class="cardbody"><label class="pick" for="fileImages">📷 เลือกรูป / ถ่ายรูป<small><br/>สูงสุด 12 รูป</small></label><input accept="image/*" class="hidden" id="fileImages" multiple="" type="file"/><div class="photos" id="photoList"></div></div></section>
+<section class="card"><div class="cardhead light">💬 หมายเหตุ (เพิ่มเติม)</div><div class="cardbody"><div class="field"><textarea id="remarks" placeholder="พิมพ์หมายเหตุเพิ่มเติม เช่น รายละเอียดงาน ปัญหาอื่น ๆ ..."></textarea></div></div></section>
+<div class="actions"><button class="action a-white" id="sendText">🟢 ส่งข้อความเข้า LINE</button><button class="action a-white2" id="sendPhotos">▧ ส่งรูปภาพเข้า LINE</button><button class="action save-pending" id="saveTrip">▣ บันทึกเที่ยวงาน</button><button class="action a-blue" id="newTrip">🔄 เริ่มเที่ยวงานใหม่</button></div>
+<section class="card hidden" id="reportCard"><div class="cardhead">📋 ตัวอย่างข้อความที่จะส่ง</div><div class="cardbody"><div class="preview" id="reportPreview"></div><div class="small-actions" style="margin-top:10px"><button class="quiet" id="copyReport">คัดลอกข้อความ</button><button class="quiet" id="closeReport">ปิด</button></div></div></section>
+<section class="card"><div class="cardhead">🗂 เที่ยวงานที่บันทึกไว้ <button class="mini-btn" id="exportBackup">สำรองข้อมูล</button></div><div class="cardbody" id="tripList"><span class="helper">ยังไม่มีเที่ยวงานที่บันทึก</span></div></section>
+<p class="tip">หมายเหตุ: ปุ่มส่ง LINE จะเปิดหน้าต่างแชร์ของ iPhone เพื่อให้เลือก LINE และห้องแชตด้วยตนเอง ไม่สามารถส่งอัตโนมัติโดยไม่ยืนยันได้ การจัดกลุ่มรูปสูงสุด 12 รูปขึ้นอยู่กับการรองรับของ LINE และ iOS ควรสำรองข้อมูลเป็นระยะ เพราะข้อมูลที่เก็บใน Safari อาจหายเมื่อมีการล้างข้อมูลเว็บไซต์</p>
+<div class="bottomline">QTR · Transport Report · Version 1.2</div>
+</div>
+</main>
+<div aria-label="แก้ไขข้อมูลประจำงาน" aria-modal="true" class="dialog hidden" id="editDialog" role="dialog"><div><h3>✎ แก้ไขข้อมูลประจำงาน</h3><div id="editFields"></div><div class="actions"><button class="action a-blue" id="cancelInfo">ยกเลิก</button><button class="action a-green" id="saveInfo">บันทึกข้อมูล</button></div></div></div>
+<div class="toast hidden" id="toast"></div>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const infoIds=['origin','destination','truckPlate','trailerPlate','driver'];
+const formIds=[...infoIds,'jobDate','timeOrigin','timeLoaded','timeDestination','timeBill','timeUnloaded','pallets','remarks'];
+const names=['ต้นทาง','ปลายทาง','ทะเบียนหัวรถ','ทะเบียนลูกพ่วง','คนขับชื่อ'];
+let pics=[],db=null,saveTimer=null;
+const dbReady=new Promise(resolve=>{try{let r=indexedDB.open('TLR_Transport_V1',1);r.onupgradeneeded=()=>{let d=r.result; if(!d.objectStoreNames.contains('items'))d.createObjectStore('items',{keyPath:'id'})};r.onsuccess=()=>{db=r.result;resolve(db)};r.onerror=()=>resolve(null)}catch(e){resolve(null)}});
+function getItem(id){return new Promise(async resolve=>{let d=await dbReady;if(!d)return resolve(null);try{let r=d.transaction('items','readonly').objectStore('items').get(id);r.onsuccess=()=>resolve(r.result||null);r.onerror=()=>resolve(null)}catch(e){resolve(null)}})}
+function putItem(obj){return new Promise(async resolve=>{let d=await dbReady;if(!d)return resolve(false);try{let r=d.transaction('items','readwrite').objectStore('items').put(obj);r.onsuccess=()=>resolve(true);r.onerror=()=>resolve(false)}catch(e){resolve(false)}})}
+function delItem(id){return new Promise(async resolve=>{let d=await dbReady;if(!d)return resolve(false);try{let r=d.transaction('items','readwrite').objectStore('items').delete(id);r.onsuccess=()=>resolve(true);r.onerror=()=>resolve(false)}catch(e){resolve(false)}})}
+function readForm(){return Object.fromEntries(formIds.map(id=>[id,$(id).value]))}
+function writeForm(o){if(!o)return;for(let id of formIds)if(typeof o[id]==='string')$(id).value=o[id]}
+function toast(t){$('toast').textContent=t;$('toast').classList.remove('hidden');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('toast').classList.add('hidden'),3000)}
+function formatDate(v){if(!/^\d{4}-\d{2}-\d{2}$/.test(v||''))return '-';let [y,m,d]=v.split('-').map(Number);return `${d}/${m}/${y+543}`}
+function prettyTime(v){if(!v)return '-';let s=v.replace(/\D/g,'');if(s.length!==4||+s.slice(0,2)>23||+s.slice(2)>59)return '(เวลาไม่ถูกต้อง)';return `${s.slice(0,2)}:${s.slice(2)} น.`}
+function messageText(o=readForm()){let lines=['📋 รายงานการขนส่งสินค้า','',`วันที่รับสินค้า: ${formatDate(o.jobDate)}`,`ต้นทาง: ${o.origin||'-'}`,`ปลายทาง: ${o.destination||'-'}`,`ทะเบียนรถ: ${[o.truckPlate,o.trailerPlate].filter(Boolean).join(' / ')||'-'}`,`คนขับชื่อ: ${o.driver||'-'}`,'','รายละเอียดเวลา',`• ถึงต้นทาง: ${prettyTime(o.timeOrigin)}`,`• ขึ้นสินค้าเสร็จ: ${prettyTime(o.timeLoaded)}`,`• ถึงปลายทาง: ${prettyTime(o.timeDestination)}`,`• ยื่นบิล: ${prettyTime(o.timeBill)}`,`• ลงสินค้าเสร็จ: ${prettyTime(o.timeUnloaded)}`,'',`จำนวนพาเลท: ${o.pallets||'-'} ตัว`];if(o.remarks.trim())lines.push('',`หมายเหตุ: ${o.remarks.trim()}`);return lines.join('\n')}
+function persist(){try{localStorage.setItem('tlr_draft_v1',JSON.stringify(readForm()))}catch(e){toast('พื้นที่บันทึกเต็ม โปรดสำรองข้อมูล')}}
+function photoPersist(){putItem({id:'draft_pics',photos:pics}).then(ok=>{if(!ok)toast('ไม่สามารถบันทึกรูปถาวรได้ กรุณาส่งหรือสำรองรูปไว้')})}
+function renderPics(){let root=$('photoList');root.replaceChildren();$('photoCount').textContent=`${pics.length}/12`;pics.forEach((s,i)=>{let div=document.createElement('div');div.className='pic';let im=document.createElement('img');im.src=s;im.alt=`รูปที่ ${i+1}`;let b=document.createElement('button');b.textContent='×';b.setAttribute('aria-label','ลบรูปที่ '+(i+1));b.onclick=()=>{pics.splice(i,1);renderPics();photoPersist();markUnsaved()};div.append(im,b);root.append(div)})}
+function toJpeg(file){return new Promise((resolve,reject)=>{let reader=new FileReader();reader.onload=()=>{let img=new Image;img.onload=()=>{let max=1280,scale=Math.min(1,max/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));c.getContext('2d').drawImage(img,0,0,c.width,c.height);resolve(c.toDataURL('image/jpeg',.78))};img.onerror=()=>reject(Error('รูปภาพไม่รองรับ'));img.src=reader.result};reader.onerror=()=>reject(Error('อ่านรูปภาพไม่ได้'));reader.readAsDataURL(file)})}
+function invalidTimes(){return ['timeOrigin','timeLoaded','timeDestination','timeBill','timeUnloaded'].filter(id=>$(id).value&&prettyTime($(id).value)==='(เวลาไม่ถูกต้อง)')}
+function report(){let wrong=invalidTimes();if(wrong.length){toast('เวลาไม่ถูกต้อง กรุณากรอก 4 หลัก เช่น 1430');$(wrong[0]).focus();return false}$('reportPreview').textContent=messageText();$('reportCard').classList.remove('hidden');$('reportCard').scrollIntoView({behavior:'smooth',block:'start'});return true}
+function listIds(){try{return JSON.parse(localStorage.getItem('tlr_trip_ids_v1')||'[]')}catch{return []}}
+function setIds(ids){localStorage.setItem('tlr_trip_ids_v1',JSON.stringify(ids))}
+async function listTrips(){let target=$('tripList');target.replaceChildren();let ids=listIds();if(!ids.length){let span=document.createElement('span');span.className='helper';span.textContent='ยังไม่มีเที่ยวงานที่บันทึก';target.append(span);return}for(let id of ids){let item=await getItem(id);if(!item)continue;let div=document.createElement('div');div.className='trip';let meta=document.createElement('div');let strong=document.createElement('strong');strong.textContent=`${formatDate(item.data.jobDate)} · ${item.data.destination||'ไม่ระบุปลายทาง'}`;let small=document.createElement('span');small.textContent=`${(item.photos||[]).length} รูป · ${new Date(item.time).toLocaleString('th-TH')}`;meta.append(strong,document.createElement('br'),small);let ops=document.createElement('div');ops.style.display='flex';ops.style.gap='4px';for(let [name,fn] of [['เปิด',async()=>{if(!confirm('เปิดเที่ยวงานนี้แทนข้อมูลที่กำลังกรอกอยู่?'))return;writeForm(item.data);pics=item.photos||[];persist();photoPersist();renderPics();window.scrollTo({top:0,behavior:'smooth'});toast('เปิดข้อมูลเที่ยวงานแล้ว')}],['ลบ',async()=>{if(!confirm('ต้องการลบเที่ยวงานนี้?'))return;await delItem(id);setIds(listIds().filter(x=>x!==id));listTrips()}]]){let b=document.createElement('button');b.className='quiet';b.textContent=name;b.onclick=fn;ops.append(b)}div.append(meta,ops);target.append(div)}}
+function dataUrlToFile(s,i){let [head,b64]=s.split(',');let bytes=atob(b64),arr=new Uint8Array(bytes.length);for(let j=0;j<bytes.length;j++)arr[j]=bytes.charCodeAt(j);return new File([arr],`TLR_${String(i+1).padStart(2,'0')}.jpg`,{type:'image/jpeg'})}
+async function shareText(){if(invalidTimes().length){toast('กรุณาแก้รูปแบบเวลาก่อนแชร์');return}let txt=messageText();try{if(navigator.share){await navigator.share({text:txt});return}}catch(e){if(e.name==='AbortError')return}try{await navigator.clipboard.writeText(txt);toast('คัดลอกข้อความแล้ว เปิด LINE แล้ววางข้อความได้เลย')}catch(e){$('reportPreview').textContent=txt;$('reportCard').classList.remove('hidden');toast('เลือกและคัดลอกข้อความจากช่องตัวอย่างได้เลย')}}
+async function sharePics(){if(!pics.length){toast('กรุณาเลือกรูปภาพก่อน');return}let files=pics.map(dataUrlToFile);try{if(navigator.share&&(!navigator.canShare||navigator.canShare({files}))){await navigator.share({files});return}}catch(e){if(e.name==='AbortError')return;toast('แชร์รูปชุดนี้ไม่ได้บนเบราว์เซอร์นี้')}toast('เครื่องนี้แชร์รูปหลายไฟล์ไม่ได้ กรุณาใช้ Safari หรือบันทึกรูปทีละรูป');for(let i=0;i<pics.length;i++){/* No auto downloads without user interaction */}let p=$('photoList');p.scrollIntoView({behavior:'smooth',block:'center'});p.querySelectorAll('img').forEach((im,i)=>{im.onclick=()=>{let a=document.createElement('a');a.href=pics[i];a.download=`TLR_${i+1}.jpg`;a.click();toast('บันทึกรูปที่ '+(i+1))}})}
+async function exportBackup(){let obj={app:'QTR Transport Report',version:1,exported:new Date().toISOString(),draft:readForm(),draftPhotos:pics,trips:[]};for(let id of listIds()){let x=await getItem(id);if(x)obj.trips.push(x)}let blob=new Blob([JSON.stringify(obj)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='TLR_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);toast('ดาวน์โหลดไฟล์สำรองข้อมูลแล้ว')}
+(async function init(){let now=new Date();let y=now.getFullYear(),m=String(now.getMonth()+1).padStart(2,'0'),day=String(now.getDate()).padStart(2,'0');$('jobDate').value=`${y}-${m}-${day}`;try{writeForm(JSON.parse(localStorage.getItem('tlr_draft_v1')||'null'))}catch(e){}let saved=await getItem('draft_pics');if(saved&&Array.isArray(saved.photos))pics=saved.photos;renderPics();listTrips();})();
+formIds.forEach(id=>$(id).addEventListener('input',()=>{persist();markUnsaved()}));
+for(let id of ['timeOrigin','timeLoaded','timeDestination','timeBill','timeUnloaded'])$(id).addEventListener('input',e=>{let v=e.target.value.replace(/\D/g,'').slice(0,4);if(v!==e.target.value)e.target.value=v;persist()});
+$('fileImages').addEventListener('change',async e=>{let chosen=[...e.target.files],remain=12-pics.length;if(chosen.length>remain)toast('เพิ่มได้อีก '+remain+' รูป');for(let file of chosen.slice(0,remain)){try{pics.push(await toJpeg(file))}catch(err){toast('รูปบางไฟล์อ่านไม่ได้')}}e.target.value='';renderPics();photoPersist();markUnsaved()});
+$('closeReport').onclick=()=>$('reportCard').classList.add('hidden');$('copyReport').onclick=async()=>{let s=messageText();try{await navigator.clipboard.writeText(s);toast('คัดลอกรายงานแล้ว')}catch(e){toast('กรุณาเลือกข้อความเพื่อคัดลอก')}};
+$('saveTrip').onclick=async()=>{if(invalidTimes().length){toast('กรุณาตรวจสอบเวลาให้ถูกต้อง');return}let item={id:'trip_'+Date.now(),time:Date.now(),data:readForm(),photos:[...pics]},ok=await putItem(item);if(!ok){toast('บันทึกไม่สำเร็จ พื้นที่เก็บข้อมูลอาจเต็ม');return}setIds([item.id,...listIds()]);await listTrips();persist();markSaved();toast('บันทึกเที่ยวงานเรียบร้อยแล้ว')};
+function markUnsaved(){ $('saveTrip').classList.remove('save-done');$('saveTrip').classList.add('save-pending'); }
+function markSaved(){ $('saveTrip').classList.remove('save-pending');$('saveTrip').classList.add('save-done'); }
+$('newTrip').onclick=async()=>{
+ if(!confirm('เริ่มเที่ยวงานใหม่?\\nช่องกรอกและรูปภาพที่ยังไม่บันทึกจะถูกล้าง แต่ประวัติที่บันทึกไว้จะยังอยู่'))return;
+ for(const id of ['timeOrigin','timeLoaded','timeDestination','timeBill','timeUnloaded','pallets','remarks'])$(id).value='';
+ const d=new Date();$('jobDate').value=[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+ pics=[];renderPics();$('fileImages').value='';$('reportCard').classList.add('hidden');persist();
+ await putItem({id:'draft_pics',photos:[]});markUnsaved();toast('พร้อมเริ่มเที่ยวงานใหม่');window.scrollTo({top:0,behavior:'smooth'});
+};
+$('sendText').onclick=shareText;$('sendPhotos').onclick=sharePics;$('exportBackup').onclick=exportBackup;
+$('editInfo').onclick=()=>{let target=$('editFields');target.replaceChildren();infoIds.forEach((id,i)=>{let div=document.createElement('div');div.className='field';let label=document.createElement('label');label.textContent=names[i];let input=document.createElement('input');input.id='edit_'+id;input.value=$(id).value;div.append(label,input);target.append(div)});$('editDialog').classList.remove('hidden')};$('cancelInfo').onclick=()=>$('editDialog').classList.add('hidden');$('saveInfo').onclick=()=>{infoIds.forEach(id=>$(id).value=$('edit_'+id).value.trim());persist();$('editDialog').classList.add('hidden');toast('แก้ไขข้อมูลประจำงานแล้ว')};
+</script>
+</body>
+</html>
